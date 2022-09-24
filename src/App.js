@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-        <h1>Hello React</h1>
-    </div>
+    <>
+      {/* <Navbar title="{3}" aboutText="About Us"/> */}
+      <Navbar />
+
+    </>
   );
 }
 
