@@ -12,7 +12,7 @@ function TextForm(props) {
         console.log('OnChange');
         setText(e.target.value);
     }
-    const [text, setText] = useState('Enter Text');
+    const [text, setText] = useState('');
     // you can pass default value null in useState
     return (
         <>
@@ -21,6 +21,10 @@ function TextForm(props) {
                 <textarea className="form-control" onChange={onChangeHandler} id="myText" value={text} row='15'></textarea>
             </div>
             <button className='btn btn-primary' onClick={handleUpClick}>Convert To Uppercase</button>
+            <div className='container my-4'>
+                <h1>Word counter</h1>
+                <p>Count {text.split(' ').length} words and lenth {text.length}</p>
+            </div>
         </>
     )
 }
