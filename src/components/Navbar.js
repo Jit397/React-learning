@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types'
 function Navbar(props) {
     return (
@@ -15,7 +16,7 @@ function Navbar(props) {
                                 <a className="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/">{props.aboutText}</a>
+                                <Link className="nav-link" to="/about">{props.aboutText}</Link>
                             </li>
                         </ul>
 
